@@ -729,7 +729,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="p-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
                     <p className="font-semibold text-emerald-400 mb-1">Phase 1 — Identity Verification</p>
-                    <p>The Identity Sentinel verifies the sender&apos;s A-Pass credential: active status, KYC currency,
+                    <p>The Identity Sentinel verifies the sender&apos;s A-Pass credential: active status, KYC current,
                     wallet binding validity, and absence from sanctions lists. No identity, no transaction.</p>
                   </div>
                   <div className="p-3 rounded-lg bg-amber-500/5 border border-amber-500/20">
