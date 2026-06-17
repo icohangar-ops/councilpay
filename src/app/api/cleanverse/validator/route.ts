@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json(result);
       }
       case 'is_registered': {
-        const result = isPoolRegistered(params.chain, params.poolAddress);
+        const result = await isPoolRegistered(params.chain, params.poolAddress);
         return NextResponse.json(result);
       }
       default:
