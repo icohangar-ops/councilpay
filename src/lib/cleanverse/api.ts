@@ -1,4 +1,4 @@
-import { cleanverseRequest } from './crypto';
+import { cleanverseRequest, CLEANVERSE_API_ID } from './crypto';
 
 // ── A-Pass ──────────────────────────────────────────────
 
@@ -98,7 +98,7 @@ export async function queryATokenStatus(requestId: string) {
   const res = await fetch(
     `https://uatapi.cleanverse.com/api/cooperate/atoken/query_apply_status/${requestId}`,
     {
-      headers: { 'api-id': 'REDACTED' },
+      headers: { 'api-id': CLEANVERSE_API_ID },
     }
   );
   return res.json();

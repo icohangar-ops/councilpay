@@ -1,8 +1,9 @@
 import CryptoJS from 'crypto-js';
 
-const CLEANVERSE_API_KEY = 'REDACTED';
-const CLEANVERSE_API_ID = 'REDACTED';
-const BASE_URL = 'https://uatapi.cleanverse.com/api/cooperate';
+const CLEANVERSE_API_KEY = process.env.CLEANVERSE_API_KEY ?? '';
+const CLEANVERSE_API_ID = process.env.CLEANVERSE_APP_ID ?? '';
+const BASE_URL =
+  process.env.CLEANVERSE_BASE_URL ?? 'https://uatapi.cleanverse.com/api/cooperate';
 
 // AES/CBC/PKCS5Padding with fixed zero IV
 function encrypt(plaintext: string): string {
