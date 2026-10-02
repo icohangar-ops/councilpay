@@ -4,6 +4,16 @@
 
 CouncilPay ensures every AI agent-initiated transaction has **confirmed identity**, **clean funds**, and **auditable authorization** by requiring 4 specialized AI agents to reach consensus through a structured 5-phase deliberation protocol before any on-chain aUSDC transfer is executed.
 
+<!-- product-screenshots:start -->
+## Product screenshots
+
+CouncilPay transaction-deliberation workspace before a consensus round is started.
+
+![councilpay product interface](demos/initial.png)
+
+Existing UI capture stored in this repository; displayed values may be demo or sample data.
+<!-- product-screenshots:end -->
+
 ## How It Works
 
 No single agent can execute a transaction. The CouncilPay protocol mandates all 4 agents deliberate and vote:
